@@ -82,44 +82,21 @@ var patio = {name: "Patio"};
 
 // Characters Collection
 var charactersArray = [];
-charactersArray.push(mrGreen);
-charactersArray.push(Doctor);
-charactersArray.push(Victor);
-charactersArray.push(Kasandra);
-charactersArray.push(mrsPeacock);
-charactersArray.push(mrMustard);
+charactersArray.push(mrGreen, Doctor, Victor, Kasandra, mrsPeacock, mrMustard);
+
 
 // Rooms' Collection
 var roomsArray = [];
 // Push each room into the roomsArray
-roomsArray.push(dinningRoom);
-roomsArray.push(conservatory);
-roomsArray.push(kitchen);
-roomsArray.push(study);
-roomsArray.push(library);
-roomsArray.push(billiardRoom);
-roomsArray.push(lounge);
-roomsArray.push(ballRoom);
-roomsArray.push(hall);
-roomsArray.push(spa);
-roomsArray.push(livingRoom);
-roomsArray.push(observatory);
-roomsArray.push(theater);
-roomsArray.push(guestHouse);
-roomsArray.push(patio);
+roomsArray.push(dinningRoom, conservatory, kitchen, study, library, billiardRoom, lounge, ballRoom, hall, spa, livingRoom,
+  observatory, theater, guestHouse, patio);
+
 
 // Weapons Collection
 var weaponsArray = [];
 // Push eachh Weapon into the weaponsArray
-weaponsArray.push(rope);
-weaponsArray.push(knife);
-weaponsArray.push(candlestick);
-weaponsArray.push(dumbbell);
-weaponsArray.push(poison);
-weaponsArray.push(axe);
-weaponsArray.push(bat);
-weaponsArray.push(trophy);
-weaponsArray.push(pistol);
+weaponsArray.push(rope, knife, candlestick, dumbbell, poison, axe, bat, trophy, pistol);
+
 
 function getRandomInt(max){
   return Math.floor(Math.random() * Math.floor(max));
@@ -136,7 +113,7 @@ function pickMistery(){
   var mistery = [];
 
   mistery.push(randomSelector(charactersArray));
-    mistery.push(randomSelector(weaponsArray));
+  mistery.push(randomSelector(weaponsArray));
   mistery.push(randomSelector(roomsArray));
 
 
